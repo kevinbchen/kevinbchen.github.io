@@ -1,0 +1,33 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: false
+
+# Setup
+title:            Kevin B. Chen
+tagline:          ''
+description:      'Software Engineer'
+url:              http://kevinbchen.github.io
+baseurl:          /
+
+author:
+  name:           'Kevin B. Chen'
+
+paginate:         5
+
+collections:
+  projects:
+    output: true
+
+menu:
+  - title:             Home
+    url:               /
+  - title:             Projects
+    url:               /projects/
+  - title:             About Me
+    url:               /about/
+  - title:             Resume
+    url:               /resume/
