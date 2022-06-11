@@ -11,7 +11,7 @@ title:            Kevin B. Chen
 tagline:          ''
 description:      'Software Engineer'
 url:              http://kevinbchen.github.io
-baseurl:          /
+baseurl:          ''
 
 author:
   name:           'Kevin B. Chen'
