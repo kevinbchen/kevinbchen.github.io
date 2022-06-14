@@ -1,0 +1,15 @@
+<div class="projects-grid">
+  {% for node in include.projects %}
+    <div class="preview">
+      <a href="{{ node.url }}">
+      <div class="bg" style="background-image: url('{{ node.preview_image }}');{{ node.preview_bg_css }}"></div>
+      <div class="gradient"></div>
+      <div class="text">
+          <span class="title">{{ node.title }}</span>
+          <span class="subtitle">&middot; {{ node.year }}</span>
+      </div>
+      </a>
+    </div>
+  {% endfor %}
+  <div style="clear: both;"></div>
+</div>

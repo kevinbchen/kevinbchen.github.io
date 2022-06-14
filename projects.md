@@ -7,7 +7,17 @@ I enjoy building things in my spare time. Some of my interests include game deve
 
 
 ## Video games
+{% assign projects = site.projects | where: "category", "games" | sort: 'year' %}
+{% include projects_grid.html projects=projects %}
 
-{% for node in site.projects %}
-  [{{ node.title }}]({{node.url}})
-{% endfor %}
+## Electronics
+{% assign projects = site.projects | where: "category", "electronics" | sort: 'year' %}
+{% include projects_grid.html projects=projects %}
+
+## Robotics / RC
+{% assign projects = site.projects | where: "category", "robotics" | sort: 'year' %}
+{% include projects_grid.html projects=projects %}
+
+## Models
+{% assign projects = site.projects | where: "category", "models" | sort: 'year' %}
+{% include projects_grid.html projects=projects %}
