@@ -21,7 +21,7 @@
   height: 100%;
   background-size: cover;
   background-position: center center;
-  opacity: 0.9;
+  opacity: 0.95;
   transition: opacity 0.25s, transform 0.25s;
 }
 

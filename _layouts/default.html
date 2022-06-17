@@ -7,6 +7,10 @@
 
     {% include sidebar.html %}
 
+    {% if page.cover_image %}
+      <div class="cover" style="background-image: url('{{ page.cover_image }}');{{ page.cover_css }}"></div>
+    {% endif %}
+
     <div class="content container">
       {{ content }}
     </div>

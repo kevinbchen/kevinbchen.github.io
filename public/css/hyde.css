@@ -122,8 +122,13 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  padding-top:    4rem;
-  padding-bottom: 4rem;
+  padding-top:    1rem;
+  padding-bottom: 1rem;
+}
+.cover {
+  height: 15rem;
+  background-size: cover;
+  background-position: center center;
 }
 
 @media (min-width: 48em) {
@@ -131,13 +136,25 @@ a.sidebar-nav-item:focus {
     max-width: 38rem;
     margin-left: 20rem;
     margin-right: 2rem;
+    margin-top: 2rem;
+  }
+  .cover {
+    max-width: 42rem;
+    margin-left: 18rem;
+    margin-right: 0rem;
   }
 }
 
 @media (min-width: 64em) {
   .content {
-    margin-left: 22rem;
-    margin-right: 4rem;
+    margin-left: 21rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+  }
+  .cover {
+    max-width: 44rem;
+    margin-left: 18rem;
+    margin-right: 0rem;
   }
 }
 
