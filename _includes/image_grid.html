@@ -1,0 +1,10 @@
+<div class="image-grid columns-{{ include.cols }}">
+  {% for image_url in include.images %}
+    <div class="image-item box-shadow">
+      <a href="{{ image_url }}">
+        <img src="{{ image_url }}" alt="{{ image_url }}" />
+      </a>
+    </div>
+  {% endfor %}
+  <div style="clear: both;"></div>
+</div>

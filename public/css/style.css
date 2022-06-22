@@ -1,3 +1,10 @@
+.box-shadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+img {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
 .preview {
   background: #0a81d1;
   position: relative;
@@ -48,3 +55,17 @@
 .preview .text .subtitle { color: #fff; font-size: 0.75rem; }
 
 .preview:hover .bg { opacity: 0.25; transform: scale(1.2); }
+
+
+.image-grid { margin-bottom: 1rem; }
+.image-grid .image-item {
+  float: left;
+  margin: 0 1% 1% 0;
+}
+.image-grid img { width: 100%; margin: 0; }
+.image-grid.columns-2 .image-item { width: 49.5%; }
+.image-grid.columns-2 .image-item:nth-child(2n) { margin-right: 0; }
+.image-grid.columns-3 .image-item { width: 32.6%; }
+.image-grid.columns-3 .image-item:nth-child(3n) { margin-right: 0; }
+.image-grid.columns-4 .image-item { width: 24.25%; }
+.image-grid.columns-4 .image-item:nth-child(4n) { margin-right: 0; }

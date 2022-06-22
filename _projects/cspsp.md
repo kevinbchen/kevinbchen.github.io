@@ -2,11 +2,11 @@
 layout: project
 title: CSPSP
 year: 2006
+category: games
+
 preview_image: /public/images/cspsp/de_dust2.png
 cover_image: /public/images/cspsp/de_dust2_2.png
 cover_css: "background-position: center top"
-
-category: games
 ---
 
 **Website**: <https://cspsp.appspot.com> <br>
