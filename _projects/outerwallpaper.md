@@ -7,21 +7,19 @@ category: "games"
 preview_image: /public/images/outerwallpaper/preview.png
 cover_image: /public/images/outerwallpaper/preview.png
 cover_css: "background-position: center top 40%"
+
+images:
+  - file: screenshot1.png
+  - file: screenshot2.png
+  - file: screenshot3.png
+  - file: screenshot4.png
 ---
 
 [**Google Play Store**](https://play.google.com/store/apps/details?id=com.kevinchen1992.outerwallpaper)
 
 This is an Android live wallpaper recreation of my favorite level from one of my favorite video games - the Outer Wall scene from [Cave Story](https://www.cavestory.org/) by Pixel. It features the Cave Story characters peacefully flying above clouds under a moonlit sky, with a nice parallax effect when you switch homescreens. 
 
-
-{% assign images = "" | split: ""
-  | push: "/public/images/outerwallpaper/screenshot1.png"
-  | push: "/public/images/outerwallpaper/screenshot2.png"
-  | push: "/public/images/outerwallpaper/screenshot3.png"
-  | push: "/public/images/outerwallpaper/screenshot4.png"
-%}
-{% include image_grid.html images=images cols=4 %}
-
+{% include image_grid.html base_url="/public/images/outerwallpaper/" images=page.images cols=4 %}
 
 The wallpaper is also highly customizable:
 - Characters (Skydragon/Kazuma/Quote or Balrog/Curly/Quote)

@@ -37,6 +37,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     var on_esc = () => {
         document.getElementById('lightbox').style.display = 'none';
+        var img = document.getElementById('lightbox_img');
+        if (img.firstChild) {
+            img.removeChild(img.firstChild);
+        }
+        document.getElementById('lightbox_next').style.visibility = 'hidden';
+        document.getElementById('lightbox_prev').style.visibility = 'hidden';
         next_element = null;
         prev_element = null;
     }

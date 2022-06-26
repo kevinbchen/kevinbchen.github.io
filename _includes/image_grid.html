@@ -1,8 +1,13 @@
+{% if include.use_thumbnails %}
+  {% assign thumbs_dir = "thumbs/" %}
+{% else %}
+  {% assign thumbs_dir = "" %}
+{% endif %}
 
 <div class="image-grid columns-{{ include.cols }}">
-  {% for image_url in include.images %}
-    <a href="{{ image_url }}" class="image-item box-shadow lightbox-image">
-      <img src="{{ image_url }}" alt="{{ image_url }}" />
+  {% for image in include.images %}
+    <a href="{{ include.base_url }}/{{ image.file }}" class="image-item box-shadow lightbox-image">
+      <img src="{{ include.base_url }}{{ thumbs_dir }}{{ image.file }}" alt="{{ image.file }}" />
     </a>
   {% endfor %}
   <div style="clear: both;"></div>

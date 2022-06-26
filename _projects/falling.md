@@ -8,6 +8,11 @@ preview_image: /public/images/falling/preview.png
 preview_bg_css: "background-position: left center"
 cover_image: /public/images/falling/preview.png
 cover_css: "background-position: left top"
+
+images:
+  - file: menu.png
+  - file: falling1.png
+  - file: instructions.png
 ---
 
 [**Google Play Store**](https://play.google.com/store/apps/details?id=com.kevinbrianchen.falling)
@@ -19,12 +24,7 @@ Falling is an endless runner type game for Android, where you fall from platform
 * Hard hat and jetpack powerups to help you survive
 * Online high-score list
 
-{% assign images = "" | split: ""
-  | push: "/public/images/falling/menu.png"
-  | push: "/public/images/falling/falling1.png"
-  | push: "/public/images/falling/instructions.png"
-%}
-{% include image_grid.html images=images cols=3 %}
+{% include image_grid.html base_url="/public/images/falling/" images=page.images cols=3 %}
 
 Falling was the first Android game I made; the initial version was created during spring break 2011, with some minor graphical updates in 2014. The game was built with the [libGDX](https://libgdx.com/) engine, and the graphics were created in Adobe Flash. The original inspiration for Falling came from the old freeware PC game [NS-SHAFT](https://www.nagi-p.com/v1/eng/nsshaft.html).
 
