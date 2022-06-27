@@ -18,7 +18,6 @@ function set_gallery(el) {
                     index = i;
                 }
             });
-
             next_element = link_elements[(index + 1) % n];
             prev_element = link_elements[((index - 1) + n) % n];
             visibility = "visible";
@@ -73,16 +72,17 @@ document.addEventListener("DOMContentLoaded", function() {
     elements.forEach(element => {
         element.addEventListener("click", function(event) {
             event.preventDefault();
+            document.getElementById('lightbox_loading').style.visibility = 'visible';
+            document.getElementById('lightbox').style.display = 'block';
+            set_gallery(this);
 
             var img = document.createElement('img');
             img.addEventListener("load", function(event) {
                 document.getElementById('lightbox_img').replaceChildren(this);
+                document.getElementById('lightbox_loading').style.visibility = 'hidden';
             });
             img.src = this.getAttribute('href');
             img.alt = this.getAttribute('title');
-
-            document.getElementById('lightbox').style.display = 'block';
-            set_gallery(this);
         });
     });
 });
