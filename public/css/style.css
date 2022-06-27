@@ -4,6 +4,13 @@
 img {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+table img {
+  margin: auto;
+}
+
+table em {
+  font-size: 0.75rem;
+}
 
 .preview {
   background: #0a81d1;
@@ -71,10 +78,15 @@ img {
 .image-grid.columns-4 .image-item { width: 24.25%; }
 .image-grid.columns-4 .image-item:nth-child(4n) { margin-right: 0; }
 
-table img {
-  margin: auto;
+.image-flexgrid { margin-bottom: 1rem }
+.image-flexgrid-row {
+  display: flex;
+  gap: 1%;
+  margin-bottom: 1%;
 }
-
-table em {
-  font-size: 0.75rem;
+.image-flexgrid-row .image-item {
+  flex-basis: 0;
+  aspect-ratio: var(--ratio);
+  flex-grow: calc(var(--ratio));
 }
+.image-flexgrid-row img { width: 100%; margin: 0; }

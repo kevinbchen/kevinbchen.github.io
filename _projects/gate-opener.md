@@ -18,6 +18,23 @@ images2:
   - file: 20170924_164734.jpg
   - file: 20171102_220608.jpg
   - file: 20171102_230028.jpg
+
+images3:
+  base_url: /public/images/gate-opener/
+  use_thumbnails: true
+  rows:
+    - 
+      - file: 20170924_161058.jpg
+        ratio: 3024 / 4032
+      - file: 20170924_162922.jpg
+        ratio: 3024 / 4032
+      - file: 20170924_164734.jpg
+        ratio: 4032 / 3024
+    - 
+      - file: 20171102_220608.jpg
+        ratio: 3024 / 4032
+      - file: 20171102_230028.jpg
+        ratio: 3024 / 4032
 ---
 
 Back in 2017, I had just moved into a new gated complex with 3 other housemates; unfortunately, our landlord only provided 2 gate openers, and the HOA charged $100 for each additional remote. I thought this would be a good opportunity to see if I could clone the remote for a bit cheaper. Some resources I found that were particularly useful:
@@ -83,4 +100,4 @@ Finally, I moved the setup from the breadboard slightly more permanent setup. I 
 
 There was a small issue in terms of the power source - the original remote ran off of two 3V batteries, which was just slightly above the rated 5.5V max of the ATtiny. Fortunately, a simple solution was to just use a single 3V battery; this worked fine and didn't seem to noticeably impact the remote's range.
 
-{% include image_grid.html base_url="/public/images/gate-opener/" images=page.images2 cols=3 use_thumbnails=true %}
+{% include image_flexgrid.html images=page.images3 %}

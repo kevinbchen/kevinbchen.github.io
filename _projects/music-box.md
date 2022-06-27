@@ -8,8 +8,12 @@ preview_image: /public/images/music-box/preview.jpg
 cover_image: /public/images/music-box/IMG_20140727_223230_141.jpg
 
 images1:
-  - file: musicbox-pcb.png
-  - file: IMG_20140726_133942_857.jpg
+  base_url: /public/images/music-box/
+  rows:
+    - - file: musicbox-pcb.png
+        ratio: 524 / 252
+      - file: IMG_20140726_133942_857.jpg
+        ratio: 3264 / 1836
 
 images2:
   - file: IMG_20140726_133816_593.jpg
@@ -59,11 +63,11 @@ For power, I initially hoped to use a CR2032 battery, but had some trouble getti
 
 I used Eagle for the schematic and pcb design. I ordered the PCBs from OSH Park and most of the components from Digikey. Everything was through-hole, so assembly was easy.
 
-|![schematic](/public/images/music-box/musicbox-schematic.png)|
+|[![schematic](/public/images/music-box/musicbox-schematic.png)](/public/images/music-box/musicbox-schematic.png){:.lightbox-image}|
 |:--:|
 |*The \~SHDN pin on the MAX756 should actually be connected to +5V (this ended up not being a problem though)*|
 
-{% include image_grid.html base_url="/public/images/music-box/" images=page.images1 cols=2 %}
+{% include image_flexgrid.html images=page.images1 %}
 
 I did run into a small issue though - for some reason, the switch attached to pin D7 (the 'B key') wasn't being pulled up properly to logic high when open, especially when the speaker was on. The speaker PWM pins are on D6 and D5, so maybe the speaker is drawing too much current and pulling down D7 somehow? Unfortunately, I didn't have an oscilloscope at the time to properly debug, but was able to workarond it by routing the switch to unused pin B4 and cutting off the D7 pin.
 

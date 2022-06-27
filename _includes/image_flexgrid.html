@@ -1,0 +1,20 @@
+{% assign images = include.images %}
+
+{% if images.use_thumbnails %}
+  {% assign thumbs_dir = "thumbs/" %}
+{% else %}
+  {% assign thumbs_dir = "" %}
+{% endif %}
+
+<div class="image-flexgrid gallery">
+  {% for row in images.rows %}
+    <div class="image-flexgrid-row">
+      {% for image in row %}
+        <a href="{{ images.base_url }}{{ image.file }}" class="image-item lightbox-image" style="--ratio: {{ image.ratio }};">
+          <img src="{{ images.base_url }}{{ thumbs_dir }}{{ image.file }}" alt="{{ image.file }}" />
+        </a>
+      {% endfor %}
+    </div>
+  {% endfor %}
+  <div style="clear: both;"></div>
+</div>
