@@ -4,6 +4,7 @@ WIDTH=512
 patterns=(
     "mp3-player/IMG_*"
     "mp3-player/schematic_*"
+    "music-box/IMG_*"
 )
 
 for pattern in ${patterns[@]}; do

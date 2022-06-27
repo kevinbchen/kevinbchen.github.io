@@ -70,3 +70,11 @@ img {
 .image-grid.columns-3 .image-item:nth-child(3n) { margin-right: 0; }
 .image-grid.columns-4 .image-item { width: 24.25%; }
 .image-grid.columns-4 .image-item:nth-child(4n) { margin-right: 0; }
+
+table img {
+  margin: auto;
+}
+
+table em {
+  font-size: 0.75rem;
+}
