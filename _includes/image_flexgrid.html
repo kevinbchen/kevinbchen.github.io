@@ -10,7 +10,9 @@
   {% for row in images.rows %}
     <div class="image-flexgrid-row">
       {% for image in row %}
-        <a href="{{ images.base_url }}{{ image.file }}" class="image-item lightbox-image" style="--ratio: {{ image.ratio }};">
+        {% assign ratio = image.ratio %}
+        {% unless ratio %}{% assign ratio = images.default_ratio %}{% endunless %}
+        <a href="{{ images.base_url }}{{ image.file }}" class="image-item lightbox-image" style="--ratio: {{ ratio }};">
           <img src="{{ images.base_url }}{{ thumbs_dir }}{{ image.file }}" alt="{{ image.file }}" />
         </a>
       {% endfor %}

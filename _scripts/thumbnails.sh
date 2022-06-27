@@ -6,6 +6,7 @@ patterns=(
     "mp3-player/schematic_*"
     "music-box/IMG_*"
     "gate-opener/2*"
+    "switch-controller/2*"
 )
 
 for pattern in ${patterns[@]}; do
