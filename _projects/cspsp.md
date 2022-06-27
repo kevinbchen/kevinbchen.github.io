@@ -7,6 +7,20 @@ category: games
 preview_image: /public/images/cspsp/de_dust2.png
 cover_image: /public/images/cspsp/de_dust2_2.png
 cover_css: "background-position: center top"
+
+images:
+  base_url: /public/images/cspsp/
+  default_ratio: 480 / 272
+  use_thumbnails: false
+  rows:
+    - - file: menu.png
+      - file: preview.png
+    - - file: flagrunner.png
+      - file: de_dust2.png
+      - file: snap0344.png
+    - - file: snap0339.png
+      - file: snap0350.png
+      - file: controls.png
 ---
 
 **Website**: <https://cspsp.appspot.com> <br>
@@ -16,10 +30,9 @@ CSPSP is a homebrew game for the Sony PSP that I started in 2006 and worked on t
 
 It features fully multiplayer game with community-hosted servers, player-created custom maps, and an account system with friend lists and clans. During its prime, it had a thriving community with over 10,000 registered players, making it one of the most popular multiplayer PSP games. It was particularly unique given that very few PSP games at the time (homebrew or commercial) had non-local multiplayer gameplay.
 
-Unfortunately, life got busy, and I stopped development on CSPSP in 2012. The game eventually died from players simply moving on and the natural lifecycle of the PSP system, but I'm glad it was a source of fun for many players during those years.
+{% include image_flexgrid.html images=page.images %}
 
-![menu](/public/images/cspsp/menu.png)
-![cs_italy](/public/images/cspsp/preview.png)
+Unfortunately, life got busy, and I stopped development on CSPSP in 2012. The game eventually died from players simply moving on and the natural lifecycle of the PSP system, but I'm glad it was a source of fun for many players during those years.
 
 ### Technical Details
 
@@ -32,7 +45,9 @@ Visually, the maps are composed of 32x32 tiles, but their collision geometry is 
 
 Like the original Counter-Strike, custom maps are a big feature of CSPSP. Almost all the maps included by default were created by the community. The UCSPSPE map editor itself was also created by a community member, *coolguy5678*. 
 
-![ucspspe](/public/images/cspsp/ucspspe.png)
+|![ucspspe](/public/images/cspsp/ucspspe.png)|
+|:--:|
+|*UCSPSPE map editor*|
 
 #### Bots
 The early versions of CSPSP weren't yet multiplayer, so I first implemented bots to play with/against. The bots use A* with predefined waypoints to navigate the map and find their targets, but with added randomness to make them less predictable.
@@ -48,10 +63,14 @@ I used some common techniques to help compensate for latency (the [Source Multip
 
 On a client, other characters' positions are smoothly interpolated between snapshots; snapshot positions themselves are extrapolated based on character velocity and estimated latency. Bullets are similarly extrapolated based on estimated latency to reduce visual mismatches.
 
-![extrapolation](/public/images/cspsp/extrapolation.png)
+|![extrapolation](/public/images/cspsp/extrapolation.png)|
+|:--:|
+|*Debug visualization of network extrapolation*|
 
 #### Lobby / Master Server
 
 The online lobby is backed by a [web-based master server](http://cspsp.appspot.com/) powered by Google App Engine. It maintains a global server list that game servers can register themselves onto, and which clients can fetch. The master server also implements an account system that includes friend lists, clans, and basic kill/death stat tracking. 
 
-![lobby](/public/images/cspsp/lobby.png)
+|![lobby](/public/images/cspsp/lobby.png)|
+|:--:|
+|*Online lobby*|

@@ -56,7 +56,7 @@ Additional searching got me the FCC ID&nbsp;EF4 ACP00872, and I was able to look
 
 Since I had a working remote and knew the schematic, I could have just used an oscilloscope to probe the signal pin for the code. Unfortunately, I didn't have a scope at the time, so I went for a more indirect approach - an [RTL-SDR](https://www.amazon.com/gp/product/B011HVUEME/ref=oh_aui_detailpage_o00_s00?ie=UTF8&amp;psc=1). This let me extract the actual RF signal the remote transmits. Demodulated:
 
-![signal](/public/images/gate-opener/remote1.png)
+[![signal](/public/images/gate-opener/remote1.png)](/public/images/gate-opener/remote1.png){:.lightbox-image}
 
 As we can see, there is an initial sync pulse, followed by 23 data pulses. Each pulse is 1 ms, with one in each 6 ms period. This translates to the code `01001110010010110100010`, if we assume that a pulse in the earlier half of the period means a 0. Of course, whether it means 0 or 1 doesn't matter, as long as we can reproduce the code.
 
@@ -67,7 +67,7 @@ Because the remote uses 318 MHz instead of the more common frequency 315 MHz or 
 
 I desoldered the existing PIC microcontroller and wired up an ATtiny45. The initial breadboard prototype in all its janky glory:
 
-![breadboard](/public/images/gate-opener/20170924_022957.jpg)
+[![breadboard](/public/images/gate-opener/20170924_022957.jpg)](/public/images/gate-opener/20170924_022957.jpg){:.lightbox-image}
 
 The software was pretty straightforward. Instead of messing with timers, I just used `_delay_us()` for simplicity. I fed the button input to INT0 and had the actual transmission in the external interrupt, so the ATtiny could stay in powered down mode until the button was pressed.
 
