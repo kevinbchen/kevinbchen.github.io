@@ -7,7 +7,7 @@ function set_gallery(el) {
     var next = document.getElementById('lightbox_next');
     var prev = document.getElementById('lightbox_prev');
     var visibility = "hidden";
-    var gallery = el.closest('.image-grid');
+    var gallery = el.closest('.gallery');
     if (gallery) {
         var link_elements = gallery.querySelectorAll("a[class*='lightbox-']");
         var n = link_elements.length;

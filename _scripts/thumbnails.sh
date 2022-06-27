@@ -5,6 +5,7 @@ patterns=(
     "mp3-player/IMG_*"
     "mp3-player/schematic_*"
     "music-box/IMG_*"
+    "gate-opener/2*"
 )
 
 for pattern in ${patterns[@]}; do
@@ -15,6 +16,6 @@ for pattern in ${patterns[@]}; do
         filename=$(basename -- "$i")
         thumb="${dir}/thumbs/${filename}"
         mkdir -p ${dir}/thumbs/
-        convert -thumbnail ${WIDTH}x -unsharp 0x.5 $i $thumb
+        convert -auto-orient -thumbnail ${WIDTH}x -unsharp 0x.5 $i $thumb
     done
 done
