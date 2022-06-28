@@ -4,12 +4,12 @@ title: CSPSP
 year: 2006
 category: games
 
-preview_image: /public/images/cspsp/de_dust2.png
-cover_image: /public/images/cspsp/de_dust2_2.png
+preview_image: /assets/images/cspsp/de_dust2.png
+cover_image: /assets/images/cspsp/de_dust2_2.png
 cover_css: "background-position: center top"
 
 images:
-  base_url: /public/images/cspsp/
+  base_url: /assets/images/cspsp/
   default_ratio: 480 / 272
   use_thumbnails: false
   rows:
@@ -45,7 +45,7 @@ Visually, the maps are composed of 32x32 tiles, but their collision geometry is 
 
 Like the original Counter-Strike, custom maps are a big feature of CSPSP. Almost all the maps included by default were created by the community. The UCSPSPE map editor itself was also created by a community member, *coolguy5678*. 
 
-|![ucspspe](/public/images/cspsp/ucspspe.png)|
+|![ucspspe](/assets/images/cspsp/ucspspe.png)|
 |:--:|
 |*UCSPSPE map editor*|
 
@@ -63,7 +63,7 @@ I used some common techniques to help compensate for latency (the [Source Multip
 
 On a client, other characters' positions are smoothly interpolated between snapshots; snapshot positions themselves are extrapolated based on character velocity and estimated latency. Bullets are similarly extrapolated based on estimated latency to reduce visual mismatches.
 
-|![extrapolation](/public/images/cspsp/extrapolation.png)|
+|![extrapolation](/assets/images/cspsp/extrapolation.png)|
 |:--:|
 |*Debug visualization of network extrapolation*|
 
@@ -71,6 +71,6 @@ On a client, other characters' positions are smoothly interpolated between snaps
 
 The online lobby is backed by a [web-based master server](http://cspsp.appspot.com/) powered by Google App Engine. It maintains a global server list that game servers can register themselves onto, and which clients can fetch. The master server also implements an account system that includes friend lists, clans, and basic kill/death stat tracking. 
 
-|![lobby](/public/images/cspsp/lobby.png)|
+|![lobby](/assets/images/cspsp/lobby.png)|
 |:--:|
 |*Online lobby*|

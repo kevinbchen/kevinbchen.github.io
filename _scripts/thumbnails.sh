@@ -11,7 +11,7 @@ patterns=(
 
 for pattern in ${patterns[@]}; do
     echo $pattern
-    for i in $(dirname "$BASH_SOURCE")/../public/images/$pattern; do
+    for i in $(dirname "$BASH_SOURCE")/../assets/images/$pattern; do
         echo $i
         dir=$(dirname "$i")
         filename=$(basename -- "$i")

@@ -4,11 +4,11 @@ title: Music Box
 year: 2014
 category: electronics
 
-preview_image: /public/images/music-box/preview.jpg
-cover_image: /public/images/music-box/IMG_20140727_223230_141.jpg
+preview_image: /assets/images/music-box/preview.jpg
+cover_image: /assets/images/music-box/IMG_20140727_223230_141.jpg
 
 images1:
-  base_url: /public/images/music-box/
+  base_url: /assets/images/music-box/
   rows:
     - - file: musicbox-pcb.png
         ratio: 524 / 252
@@ -33,7 +33,7 @@ This is a small electronic music box that can store and play \~5 songs (dependin
 I started off with simple square-wave waveform with linearly decreasing amplitude to get something that sounded like:
 
 <audio controls="controls" height="50px" width="150px">
-  <source src="/public/images/music-box/moonsong.mp3" type="audio/mpeg"></source>
+  <source src="/assets/images/music-box/moonsong.mp3" type="audio/mpeg"></source>
 </audio>
 
 Not too bad, but a bit grating. I then tried using actual samples from pianos/guitars. This worked ok, but I had issues with the tradeoffs between sample size and the quality; in addition, I could only change the pitch by going through the sample faster or slower (e.g. higher notes were noticeably shorter).
@@ -41,10 +41,10 @@ Not too bad, but a bit grating. I then tried using actual samples from pianos/gu
 Eventually, I found a [great writeup](http://www.deep-shadows.com/hax/wordpress/?page_id=1111) by someone who made a similar project. They got a nice music-box sound by using a sine wave and decreasing the amplitude gradually: 
 
 <audio controls="controls" height="50px" width="150px">
-  <source src="/public/images/music-box/moonsong2.mp3" type="audio/mpeg"></source>
+  <source src="/assets/images/music-box/moonsong2.mp3" type="audio/mpeg"></source>
 </audio>
 
-|![waveform](/public/images/music-box/waveform.png)|
+|![waveform](/assets/images/music-box/waveform.png)|
 |:--:|
 |*(sine wave frequency not to scale)*|
 
@@ -63,7 +63,7 @@ For power, I initially hoped to use a CR2032 battery, but had some trouble getti
 
 I used Eagle for the schematic and pcb design. I ordered the PCBs from OSH Park and most of the components from Digikey. Everything was through-hole, so assembly was easy.
 
-|[![schematic](/public/images/music-box/musicbox-schematic.png)](/public/images/music-box/musicbox-schematic.png){:.lightbox-image}|
+|[![schematic](/assets/images/music-box/musicbox-schematic.png)](/assets/images/music-box/musicbox-schematic.png){:.lightbox-image}|
 |:--:|
 |*The \~SHDN pin on the MAX756 should actually be connected to +5V (this ended up not being a problem though)*|
 
@@ -71,4 +71,4 @@ I used Eagle for the schematic and pcb design. I ordered the PCBs from OSH Park 
 
 I did run into a small issue though - for some reason, the switch attached to pin D7 (the 'B key') wasn't being pulled up properly to logic high when open, especially when the speaker was on. The speaker PWM pins are on D6 and D5, so maybe the speaker is drawing too much current and pulling down D7 somehow? Unfortunately, I didn't have an oscilloscope at the time to properly debug, but was able to workarond it by routing the switch to unused pin B4 and cutting off the D7 pin.
 
-{% include image_grid.html base_url="/public/images/music-box/" images=page.images2 cols=2 use_thumbnails=true %}
+{% include image_grid.html base_url="/assets/images/music-box/" images=page.images2 cols=2 use_thumbnails=true %}
