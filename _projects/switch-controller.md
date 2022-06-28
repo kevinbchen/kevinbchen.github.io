@@ -9,36 +9,35 @@ cover_image: /assets/images/switch-controller/preview.jpg
 
 images1:
   base_url: /assets/images/switch-controller/
-  default_ratio: 4032 / 3024
+  ratio: 4032 / 3024
   use_thumbnails: true
-  rows:
-    - 
-      - file: 20200502_134007.jpg
-      - file: 20200507_003424.jpg
+  sections:
+    - images:
+        - file: 20200502_134007.jpg
+        - file: 20200507_003424.jpg
 
 hardware_images:
   base_url: /assets/images/switch-controller/
-  default_ratio: 4032 / 3024
+  ratio: 4032 / 3024
   use_thumbnails: true
-  rows:
-    - 
-      - file: 20200501_010948.jpg
-      - file: 20200502_003304.jpg
-      - file: 20200502_132400.jpg
-      - file: 20200502_132422.jpg
-    - 
-      - file: 20200429_234650.jpg
-        ratio: 3024 / 4032
-      - file: 20200429_234622.jpg
-        ratio: 3024 / 4032
-      - file: 20200429_235753.jpg
-      - file: 20200430_000228.jpg
-    - 
-      - file: 20200429_000347.jpg
-      - file: 20200429_000637.jpg
-      - file: 20200426_182859.jpg
-      - file: 20200430_011056.jpg
-        ratio: 3024 / 4032
+  sections:
+    - cols: 4
+      images:
+        - file: 20200501_010948.jpg
+        - file: 20200502_003304.jpg
+        - file: 20200502_132400.jpg
+        - file: 20200502_132422.jpg
+        - file: 20200429_234650.jpg
+          ratio: 3024 / 4032
+        - file: 20200429_234622.jpg
+          ratio: 3024 / 4032
+        - file: 20200429_235753.jpg
+        - file: 20200430_000228.jpg
+        - file: 20200429_000347.jpg
+        - file: 20200429_000637.jpg
+        - file: 20200426_182859.jpg
+        - file: 20200430_011056.jpg
+          ratio: 3024 / 4032
 ---
 **Github**: <https://github.com/kevinbchen/switch-controller>
 

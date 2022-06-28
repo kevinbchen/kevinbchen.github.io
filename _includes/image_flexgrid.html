@@ -7,20 +7,28 @@
 {% endif %}
 
 <div class="image-flexgrid gallery">
-  {% for row in images.rows %}
-    <div class="image-flexgrid-row">
-      {% for image in row %}
-        {% assign ratio = image.ratio %}
-        {% unless ratio %}{% assign ratio = images.default_ratio %}{% endunless %}
+  {%- for section in images.sections -%}
+    {%- assign cols = section.cols -%}
+    {%- unless cols %}{% assign cols = section.images | size %}{% endunless -%}
 
-        {% assign thumbnail = image.thumbnail %}
-        {% unless thumbnail %}{% assign thumbnail = thumbs_dir | append: image.file %}{% endunless %}
-
+    {%- for image in section.images -%}
+      {%- assign i0 = forloop.index0 | modulo:cols -%}
+      {%- assign i1 = forloop.index | modulo:cols -%}
+      {%- assign ratio = image.ratio -%}
+      {%- unless ratio %}{% assign ratio = section.ratio %}{% endunless -%}
+      {%- unless ratio %}{% assign ratio = images.ratio %}{% endunless -%}
+      {%- assign thumbnail = image.thumbnail -%}
+      {%- unless thumbnail %}{% assign thumbnail = thumbs_dir | append: image.file %}{% endunless -%}
+      {%- if i0 == 0 -%}
+        <div class="image-flexgrid-row">
+      {%- endif -%}
         <a href="{{ images.base_url }}{{ image.file }}" class="image-item lightbox-image" style="--ratio: {{ ratio }};">
           <img src="{{ images.base_url }}{{ thumbnail }}" alt="{{ image.file }}" />
         </a>
-      {% endfor %}
-    </div>
-  {% endfor %}
+      {%- if i1 == 0 or forloop.last -%}
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
   <div style="clear: both;"></div>
 </div>

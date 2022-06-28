@@ -21,17 +21,17 @@ images2:
 
 images3:
   base_url: /assets/images/gate-opener/
-  default_ratio: 3024 / 4032
+  ratio: 3024 / 4032
   use_thumbnails: true
-  rows:
-    - 
-      - file: 20170924_161058.jpg
-      - file: 20170924_162922.jpg
-      - file: 20170924_164734.jpg
-        ratio: 4032 / 3024
-    - 
-      - file: 20171102_220608.jpg
-      - file: 20171102_230028.jpg
+  sections:
+    - images:
+        - file: 20170924_161058.jpg
+        - file: 20170924_162922.jpg
+        - file: 20170924_164734.jpg
+          ratio: 4032 / 3024
+    - images:
+        - file: 20171102_220608.jpg
+        - file: 20171102_230028.jpg
 ---
 
 Back in 2017, I had just moved into a new gated complex with 3 other housemates; unfortunately, our landlord only provided 2 gate openers, and the HOA charged $100 for each additional remote. I thought this would be a good opportunity to see if I could clone the remote for a bit cheaper. Some resources I found that were particularly useful:

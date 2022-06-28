@@ -10,12 +10,13 @@ cover_image: /assets/images/music-box/IMG_20140727_223230_141.jpg
 images1:
   base_url: /assets/images/music-box/
   use_thumbnails: true
-  rows:
-    - - file: musicbox-pcb.png
-        thumbnail: musicbox-pcb.png
-        ratio: 524 / 252
-      - file: IMG_20140726_133942_857.jpg
-        ratio: 3264 / 1836
+  sections:
+    - images:
+        - file: musicbox-pcb.png
+          thumbnail: musicbox-pcb.png
+          ratio: 524 / 252
+        - file: IMG_20140726_133942_857.jpg
+          ratio: 3264 / 1836
 
 images2:
   - file: IMG_20140726_133816_593.jpg

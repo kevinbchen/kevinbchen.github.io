@@ -6,7 +6,8 @@ patterns=(
     # "music-box/IMG_* 512x"
     # "gate-opener/2* 512x"
     # "switch-controller/2* 512x"
-    "grizzly-tank/IMG_* 720x"
+    # "grizzly-tank/IMG_* 720x"
+    "metal-gear-rex/IMG_* 720x"
 )
 
 for pattern in "${patterns[@]}"; do

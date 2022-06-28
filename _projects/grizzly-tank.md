@@ -11,41 +11,38 @@ cover_css: "background-position: center top 30%"
 images:
   base_url: /assets/images/grizzly-tank/
   use_thumbnails: true
-  default_ratio: 2592 / 1936
-  rows:
-    -
-      - file: CNCRA2_Grizzly_Battle_Tank.png
-        thumbnail: CNCRA2_Grizzly_Battle_Tank.png
-        ratio: 324 / 219
-      - file: IMG_20110107_025149.jpg
-    -
-      - file: IMG_20110107_025103.jpg
-      - file: IMG_20110107_134203.jpg
-    -
-      - file: IMG_20101229_025656.jpg
-      - file: IMG_20101229_161255.jpg
-      - file: IMG_20101230_013002.jpg
-      - file: IMG_20101231_013610.jpg
-    -
-      - file: IMG_20101231_013648.jpg
-      - file: IMG_20110101_034047.jpg
-      - file: IMG_20110102_012523.jpg
-      - file: IMG_20110103_024538.jpg
-    -
-      - file: IMG_20110103_163136.jpg
-      - file: IMG_20110105_045807.jpg
-      - file: IMG_20110105_231858.jpg
-      - file: IMG_20110106_004920.jpg
-    -
-      - file: IMG_20110106_034953.jpg
-      - file: IMG_20110106_042026.jpg
-      - file: IMG_20110106_042041.jpg
-      - file: IMG_20110106_185811.jpg
-    -
-      - file: IMG_20110106_194356.jpg
-      - file: IMG_20110106_195121.jpg
-      - file: IMG_20110106_195136.jpg
-      - file: IMG_20110106_195208.jpg
+  ratio: 2592 / 1936
+  sections:
+    - images:
+        - file: CNCRA2_Grizzly_Battle_Tank.png
+          thumbnail: CNCRA2_Grizzly_Battle_Tank.png
+          ratio: 324 / 219
+        - file: IMG_20110107_025149.jpg
+    - images:
+        - file: IMG_20110107_025103.jpg
+        - file: IMG_20110107_134203.jpg
+    - cols: 4
+      images:
+        - file: IMG_20101229_025656.jpg
+        - file: IMG_20101229_161255.jpg
+        - file: IMG_20101230_013002.jpg
+        - file: IMG_20101231_013610.jpg
+        - file: IMG_20101231_013648.jpg
+        - file: IMG_20110101_034047.jpg
+        - file: IMG_20110102_012523.jpg
+        - file: IMG_20110103_024538.jpg
+        - file: IMG_20110103_163136.jpg
+        - file: IMG_20110105_045807.jpg
+        - file: IMG_20110105_231858.jpg
+        - file: IMG_20110106_004920.jpg
+        - file: IMG_20110106_034953.jpg
+        - file: IMG_20110106_042026.jpg
+        - file: IMG_20110106_042041.jpg
+        - file: IMG_20110106_185811.jpg
+        - file: IMG_20110106_194356.jpg
+        - file: IMG_20110106_195121.jpg
+        - file: IMG_20110106_195136.jpg
+        - file: IMG_20110106_195208.jpg
 
 ---
 

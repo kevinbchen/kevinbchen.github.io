@@ -10,17 +10,20 @@ cover_css: "background-position: center top"
 
 images:
   base_url: /assets/images/cspsp/
-  default_ratio: 480 / 272
+  ratio: 480 / 272
   use_thumbnails: false
-  rows:
-    - - file: menu.png
-      - file: preview.png
-    - - file: flagrunner.png
-      - file: de_dust2.png
-      - file: snap0344.png
-    - - file: snap0339.png
-      - file: snap0350.png
-      - file: controls.png
+  sections:
+    - images:
+        - file: menu.png
+        - file: preview.png
+    - images:
+        - file: flagrunner.png
+        - file: de_dust2.png
+        - file: snap0344.png
+    - images:
+        - file: snap0339.png
+        - file: snap0350.png
+        - file: controls.png
 ---
 
 **Website**: <https://cspsp.appspot.com> <br>
