@@ -12,8 +12,12 @@
       {% for image in row %}
         {% assign ratio = image.ratio %}
         {% unless ratio %}{% assign ratio = images.default_ratio %}{% endunless %}
+
+        {% assign thumbnail = image.thumbnail %}
+        {% unless thumbnail %}{% assign thumbnail = thumbs_dir | append: image.file %}{% endunless %}
+
         <a href="{{ images.base_url }}{{ image.file }}" class="image-item lightbox-image" style="--ratio: {{ ratio }};">
-          <img src="{{ images.base_url }}{{ thumbs_dir }}{{ image.file }}" alt="{{ image.file }}" />
+          <img src="{{ images.base_url }}{{ thumbnail }}" alt="{{ image.file }}" />
         </a>
       {% endfor %}
     </div>
