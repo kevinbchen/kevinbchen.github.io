@@ -4,11 +4,11 @@ title: Nintendo Switch Controller
 year: 2020
 category: electronics
 
-preview_image: /assets/images/switch-controller/preview.jpg
-cover_image: /assets/images/switch-controller/preview.jpg
+preview_image: /projects/switch-controller/preview.jpg
+cover_image: /projects/switch-controller/preview.jpg
 
 images1:
-  base_url: /assets/images/switch-controller/
+  base_url: /projects/switch-controller/
   ratio: 4032 / 3024
   use_thumbnails: true
   sections:
@@ -17,7 +17,7 @@ images1:
         - file: 20200507_003424.jpg
 
 hardware_images:
-  base_url: /assets/images/switch-controller/
+  base_url: /projects/switch-controller/
   ratio: 4032 / 3024
   use_thumbnails: true
   sections:

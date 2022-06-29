@@ -4,12 +4,12 @@ title: Grizzly Tank (Red Alert 2)
 year: 2010
 category: models
 
-preview_image: /assets/images/grizzly-tank/preview.jpg
-cover_image: /assets/images/grizzly-tank/preview.jpg
+preview_image: /projects/grizzly-tank/preview.jpg
+cover_image: /projects/grizzly-tank/preview.jpg
 cover_css: "background-position: center top 30%"
 
 images:
-  base_url: /assets/images/grizzly-tank/
+  base_url: /projects/grizzly-tank/
   use_thumbnails: true
   ratio: 2592 / 1936
   sections:
@@ -51,6 +51,6 @@ This is a balsa wood model of the Grizzly battle tank from Red Alert 2. The sour
 {% include image_flexgrid.html images=page.images %}
 
 {% comment %}
-{% assign images = site.static_files | where_exp: "item", "item.path contains '/assets/images/grizzly-tank/IMG'" | map: "path" %}
+{% assign images = site.static_files | where_exp: "item", "item.path contains '/projects/grizzly-tank/IMG'" | map: "path" %}
 {% include image_grid.html base_url="" images=images cols=3 use_thumbnails=false %}
 {% endcomment %}

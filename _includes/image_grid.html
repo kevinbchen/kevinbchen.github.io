@@ -6,8 +6,8 @@
 
 <div class="image-grid columns-{{ include.cols }} gallery">
   {% for image in include.images %}
-    <a href="{{ include.base_url }}{{ image.file }}" class="image-item lightbox-image">
-      <img src="{{ include.base_url }}{{ thumbs_dir }}{{ image.file }}" alt="{{ image.file }}" />
+    <a href="{{ site.files_domain }}{{ include.base_url }}{{ image.file }}" class="image-item lightbox-image">
+      <img src="{{ site.files_domain }}{{ include.base_url }}{{ thumbs_dir }}{{ image.file }}" alt="{{ image.file }}" />
     </a>
   {% endfor %}
   <div style="clear: both;"></div>

@@ -4,8 +4,8 @@ title: Cloned Gate Opener
 year: 2017
 category: electronics
 
-preview_image: /assets/images/gate-opener/preview.jpg
-cover_image: /assets/images/gate-opener/preview.jpg
+preview_image: /projects/gate-opener/preview.jpg
+cover_image: /projects/gate-opener/preview.jpg
 
 images1:
   - file: 20171102_230634.jpg
@@ -20,7 +20,7 @@ images2:
   - file: 20171102_230028.jpg
 
 images3:
-  base_url: /assets/images/gate-opener/
+  base_url: /projects/gate-opener/
   ratio: 3024 / 4032
   use_thumbnails: true
   sections:
@@ -46,7 +46,7 @@ I eventually also discovered that someone does sell a [premade cloner](https://k
 
 The first step was to open a remote up, since the outside didn't have any distinguishing marks.
 
-{% include image_grid.html base_url="/assets/images/gate-opener/" images=page.images1 cols=3 use_thumbnails=true %}
+{% include image_grid.html base_url="/projects/gate-opener/" images=page.images1 cols=3 use_thumbnails=true %}
 
 No dip switch for setting a code and no FCC ID. However, I did find the manufacturer's name (Linear), and some searching got me to the [ACT-31B product page](https://www.linearproaccess.com/radio-controls/act-31b/), which explained that each remote was factory programmed with a unique code, and that the receiver needed to be programmed to accept individual remotes.
 
@@ -56,7 +56,7 @@ Additional searching got me the FCC ID&nbsp;EF4 ACP00872, and I was able to look
 
 Since I had a working remote and knew the schematic, I could have just used an oscilloscope to probe the signal pin for the code. Unfortunately, I didn't have a scope at the time, so I went for a more indirect approach - an [RTL-SDR](https://www.amazon.com/gp/product/B011HVUEME/ref=oh_aui_detailpage_o00_s00?ie=UTF8&amp;psc=1). This let me extract the actual RF signal the remote transmits. Demodulated:
 
-[![signal](/assets/images/gate-opener/remote1.png)](/assets/images/gate-opener/remote1.png){:.lightbox-image}
+[![signal]({{ site.files_domain }}/projects/gate-opener/remote1.png)]({{ site.files_domain }}/projects/gate-opener/remote1.png){:.lightbox-image}
 
 As we can see, there is an initial sync pulse, followed by 23 data pulses. Each pulse is 1 ms, with one in each 6 ms period. This translates to the code `01001110010010110100010`, if we assume that a pulse in the earlier half of the period means a 0. Of course, whether it means 0 or 1 doesn't matter, as long as we can reproduce the code.
 
@@ -67,7 +67,7 @@ Because the remote uses 318 MHz instead of the more common frequency 315 MHz or 
 
 I desoldered the existing PIC microcontroller and wired up an ATtiny45. The initial breadboard prototype in all its janky glory:
 
-[![breadboard](/assets/images/gate-opener/20170924_022957.jpg)](/assets/images/gate-opener/20170924_022957.jpg){:.lightbox-image}
+[![breadboard]({{ site.files_domain }}/projects/gate-opener/20170924_022957.jpg)]({{ site.files_domain }}/projects/gate-opener/20170924_022957.jpg){:.lightbox-image}
 
 The software was pretty straightforward. Instead of messing with timers, I just used `_delay_us()` for simplicity. I fed the button input to INT0 and had the actual transmission in the external interrupt, so the ATtiny could stay in powered down mode until the button was pressed.
 
@@ -77,10 +77,10 @@ To debug / check my work, I used the RTL-SDR to look at the transmitted signal. 
 
 <div class="gallery" markdown="1">
 
-|[![signal2](/assets/images/gate-opener/remote2.png)](/assets/images/gate-opener/remote2.png){:.lightbox-image}|
+|[![signal2]({{ site.files_domain }}/projects/gate-opener/remote2.png)]({{ site.files_domain }}/projects/gate-opener/remote2.png){:.lightbox-image}|
 |:--:|
 |*Hacked remote signal*|
-|[![signal1](/assets/images/gate-opener/remote2.png)](/assets/images/gate-opener/remote1.png){:.lightbox-image}|
+|[![signal1]({{ site.files_domain }}/projects/gate-opener/remote2.png)]({{ site.files_domain }}/projects/gate-opener/remote1.png){:.lightbox-image}|
 |:--:|
 |*Original remote signal*|
 

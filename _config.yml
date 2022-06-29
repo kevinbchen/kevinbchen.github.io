@@ -10,8 +10,9 @@ relative_permalinks: false
 title:            Kevin B. Chen
 tagline:          ''
 description:      'Software Engineer'
-url:              http://kevinbchen.github.io
+url:              https://kevinbchen.github.io
 baseurl:          ''
+files_domain:     https://storage.googleapis.com/files.kevinbrianchen.com
 
 author:
   name:           'Kevin B. Chen'

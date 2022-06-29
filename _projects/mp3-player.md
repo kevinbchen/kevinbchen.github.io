@@ -4,8 +4,8 @@ title: MP3 Player
 year: 2013
 category: electronics
 
-preview_image: /assets/images/mp3-player/preview.jpg
-cover_image: /assets/images/mp3-player/20220110_010856.jpg
+preview_image: /projects/mp3-player/preview.jpg
+cover_image: /projects/mp3-player/20220110_010856.jpg
 cover_css: "background-position: center center"
 
 images:
@@ -39,7 +39,7 @@ schematic_images:
 
 This is an MP3 player I built for the [EE/CS 52](http://wolverine.caltech.edu/eecs52/) course at Caltech. It can read and play MP3 files from an IDE hard drive and has a simple interface with keys and a 2x24 LCD. The system is controlled with a 80188 microprocessor. This was my first introduction into electronics, so it was a pretty memorable project for me. 
 
-{% include image_grid.html base_url="/assets/images/mp3-player/" images=page.images cols=3 use_thumbnails=true %}
+{% include image_grid.html base_url="/projects/mp3-player/" images=page.images cols=3 use_thumbnails=true %}
 
 ## Hardware
 
@@ -54,7 +54,7 @@ For the project, the [major hardware components](http://wolverine.caltech.edu/ee
 
 However, we had a fair amount of freedom (or work to do) in the implementation details - what buffers/latches to use for the bus, how to hook up chip select and interrupt signals, required CPLD state machines, etc.
 
-{% include image_grid.html base_url="/assets/images/mp3-player/" images=page.schematic_images cols=3 use_thumbnails=true %}
+{% include image_grid.html base_url="/projects/mp3-player/" images=page.schematic_images cols=3 use_thumbnails=true %}
 
 
 ## Software

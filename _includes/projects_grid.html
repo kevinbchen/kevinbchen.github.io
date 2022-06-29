@@ -2,7 +2,7 @@
   {% for node in include.projects %}
     <div class="preview box-shadow">
       <a href="{{ node.url }}">
-      <div class="bg" style="background-image: url('{{ node.preview_image }}');{{ node.preview_bg_css }}"></div>
+      <div class="bg" style="background-image: url('{{ site.files_domain }}{{ node.preview_image }}');{{ node.preview_bg_css }}"></div>
       <div class="gradient"></div>
       <div class="text">
           <span class="title">{{ node.title }}</span>

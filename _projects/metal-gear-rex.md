@@ -4,11 +4,11 @@ title: Metal Gear REX
 year: 2011
 category: models
 
-preview_image: /assets/images/metal-gear-rex/preview.jpg
-cover_image: /assets/images/metal-gear-rex/preview.jpg
+preview_image: /projects/metal-gear-rex/preview.jpg
+cover_image: /projects/metal-gear-rex/preview.jpg
 
 images:
-  base_url: /assets/images/metal-gear-rex/
+  base_url: /projects/metal-gear-rex/
   use_thumbnails: true
   ratio: 4 / 3
   sections:
@@ -29,7 +29,7 @@ images:
         - file: IMG_20130616_160334_937.jpg
 
 build_images:
-  base_url: /assets/images/metal-gear-rex/
+  base_url: /projects/metal-gear-rex/
   use_thumbnails: true
   ratio: 4 / 3
   sections:
