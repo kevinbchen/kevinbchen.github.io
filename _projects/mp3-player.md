@@ -5,7 +5,7 @@ year: 2013
 category: electronics
 
 preview_image: /projects/mp3-player/preview.jpg
-cover_image: /projects/mp3-player/20220110_010856.jpg
+cover_image: /projects/mp3-player/thumbs/20220110_010856.jpg
 cover_css: "background-position: center center"
 
 images:
