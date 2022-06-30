@@ -29,7 +29,7 @@ images2:
 
 This is a small electronic music box that can store and play \~5 songs (depending on length). It can also be played manually with the piano key buttons.
 
-<iframe style="aspect-ratio: 16 / 9; height: 100%; width: 100%" src="https://www.youtube-nocookie.com/embed/vWsUht7nizM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="youtube" src="https://www.youtube-nocookie.com/embed/vWsUht7nizM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Sound Generation / Software
 

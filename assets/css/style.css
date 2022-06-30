@@ -29,6 +29,11 @@ table img {
 table em {
   font-size: 0.75rem;
 }
+.youtube {
+  aspect-ratio: 16 / 9;
+  height: 100%;
+  width: 100%;
+}
 
 .preview {
   background: #0a81d1;

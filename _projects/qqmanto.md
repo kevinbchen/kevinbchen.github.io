@@ -20,7 +20,7 @@ The first version of the game was put together in a weekend for the [NEO Summer 
 
 {% include image_grid.html base_url="/projects/qqmanto/" images=page.images cols=2 %}
 
-<iframe style="aspect-ratio: 16 / 9; height: 100%; width: 100%" src="https://www.youtube-nocookie.com/embed/CtDoJC8xUOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="youtube" src="https://www.youtube-nocookie.com/embed/CtDoJC8xUOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Download
 
