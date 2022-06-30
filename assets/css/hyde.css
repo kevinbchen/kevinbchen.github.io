@@ -45,6 +45,26 @@ html {
   }
 }
 
+/* Override page-font size */
+.content {
+  font-size: 16px;
+}
+@media (min-width: 38em) {
+  .content {
+    font-size: 18px;
+  }
+}
+@media (min-width: 48em) {
+  .content {
+    font-size: 16px;
+  }
+}
+@media (min-width: 58em) {
+  .content {
+    font-size: 18px;
+  }
+}
+
 
 /*
  * Sidebar
@@ -55,7 +75,7 @@ html {
 
 .sidebar {
   text-align: center;
-  padding: 2rem 1rem;
+  /*padding: 2rem 1rem;*/
   color: rgba(255,255,255,.5);
   background-color: #202020;
 }
@@ -67,6 +87,21 @@ html {
     bottom: 0;
     width: 18rem;
     text-align: left;
+  }
+}
+.sidebar .container {
+  padding: 1rem;
+}
+
+/* Sidebar image */
+.sidebar .profile {
+  border-radius: 50%;
+  width: 8rem;
+  margin: 0 auto 1rem auto;
+}
+@media (min-width: 48em) {
+  .sidebar .profile {
+    margin: 0 0 1rem 0;
   }
 }
 
@@ -113,6 +148,44 @@ a.sidebar-nav-item:focus {
     left:   1rem;
   }
 }
+
+/* Sidebar toggle (mobile) */
+.sidebar .container {
+  display: none;
+}
+.sidebar-mobile-bar {
+  display: flex;
+  color: #fff;
+}
+.sidebar-mobile-bar .header {
+  display: block;
+  padding: 0.5rem;
+  font-family: "Abril Fatface", serif;
+}
+.sidebar-toggle {
+  font-size: 1.5rem;
+  width: 50px;
+  margin-left: auto;
+  margin-right: 0;
+  cursor: pointer;
+}
+
+.sidebar.active .container {
+  display: block;
+}
+.sidebar.active .header {
+  display: none;
+}
+
+@media (min-width: 48em) {
+  .sidebar-mobile-bar {
+    display: none !important;
+  }
+  .sidebar .container {
+    display: block !important;
+  }
+}
+
 
 
 /* Container
