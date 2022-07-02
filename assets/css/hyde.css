@@ -96,7 +96,7 @@ html {
 /* Sidebar image */
 .sidebar .profile {
   border-radius: 50%;
-  width: 8rem;
+  width: 6rem;
   margin: 0 auto 1rem auto;
 }
 @media (min-width: 48em) {
@@ -197,6 +197,7 @@ a.sidebar-nav-item:focus {
 .content {
   padding-top:    1rem;
   padding-bottom: 1rem;
+  overflow: hidden;
 }
 .cover {
   height: 15rem;
