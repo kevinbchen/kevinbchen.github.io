@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
+    {% if page.title == "About" %}
+      {{ site.title }}
     {% else %}
-      {{ page.title }} &middot; {{ site.title }}
+      {{ site.title }} &middot; {{ page.title }}
     {% endif %}
   </title>
 
@@ -20,10 +20,9 @@
   <link rel="stylesheet" href="{{ '/assets/css/hyde.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/lightbox.css' | relative_url }}">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="//fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
   <!-- JS -->
   <script type="text/javascript" src="{{ '/assets/js/jquery-3.6.0.min.js' | relative_url }}"></script>

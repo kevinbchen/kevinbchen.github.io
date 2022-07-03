@@ -5,7 +5,7 @@ title: About
 
 <div class="index-image" id="top">
   <header class="index-header">
-    <h1 class="index-name">Kevin B. Chen</h1>
+    <h1 class="index-name">KEVIN BRIAN CHEN</h1>
     <h2 class="index-subtitle"></h2>
     <a href="#about">&#x25BC;</a>
   </header>
