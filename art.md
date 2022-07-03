@@ -50,3 +50,28 @@ I'm definitely more of an engineer than an artist, but I do like dabbling in (pr
     </a>
   {%- endfor -%}
 </div>
+
+## Animation
+
+<div class="image-flexgrid gallery">
+  <div class="image-flexgrid-row">
+    <div class="image-item" style="--ratio: 16 / 9">
+      <video controls>
+        <source src="{{ site.files_domain }}/art/mahjong_wide2.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <div class="image-flexgrid-row">
+    <div class="image-item" style="--ratio: 1 / 1">
+      <video controls loop>
+        <source src="{{ site.files_domain }}/art/vin_anim.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="image-item" style="--ratio: 1 / 1">
+      <video controls loop>
+        <source src="{{ site.files_domain }}/art/IMG_0108.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <div style="clear: both;"></div>
+</div>
