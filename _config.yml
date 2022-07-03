@@ -24,14 +24,12 @@ collections:
     output: true
 
 menu:
-  - title:             Home
-    url:               /
+  - title:             About
+    url:               /#about
   - title:             Projects
     url:               /projects/
   - title:             Art
     url:               /art/
-  - title:             About Me
-    url:               /about/
   - title:             Resume
     url:               /resume/
 

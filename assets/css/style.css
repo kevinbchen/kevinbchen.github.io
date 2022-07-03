@@ -1,3 +1,6 @@
+---
+---
+
 /* General / misc */
 .box-shadow {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -17,6 +20,46 @@ table em {
   width: 100%;
 }
 
+/* Index */
+.index-image {
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255,255,255,0.05), rgba(0,0,0,0.05), rgba(0,0,0,0.4)), 
+    url('{{ site.files_domain }}/art/sekiro.jpg') no-repeat fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.index-page {
+  background-color: #fff;
+  min-height: 70vh;
+  margin-bottom: 0;
+}
+.index-header {
+  position: absolute;
+  top: 40%;
+  padding: 0 4rem 0 4rem;
+  width: 100%;
+  text-align: center;
+}
+.index-header h1, .index-header h2, .index-header a {
+  color: #fff;
+}
+.index-name {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3.0rem;
+}
+.index-subtitle {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+}
+.index-header a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.index-header a:hover {
+}
 
 /* Projects list */
 .preview {
@@ -104,7 +147,6 @@ table em {
 
 /* Art page */
 .art-page  {
-  margin-bottom: 4em;
 }
 .image-masonry {
   column-count: 2;
