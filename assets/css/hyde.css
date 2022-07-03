@@ -77,6 +77,7 @@ html {
  */
 
 .sidebar {
+  position: relative;
   z-index: 100;
   text-align: center;
   /*padding: 2rem 1rem;*/
@@ -204,8 +205,7 @@ a.sidebar-nav-item:focus {
   background: #fafafa;
 }
 .content-bg {
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.4)),
-    url('{{ site.files_domain }}/art/sekiro.jpg') no-repeat fixed;
+  background: url('{{ site.files_domain }}/art/sekiro.jpg') no-repeat;
   background-position: center;
   background-size: cover;
   position: fixed;
@@ -213,7 +213,8 @@ a.sidebar-nav-item:focus {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.2;
+  opacity: 0.1;
+  will-change: transform;
 }
 .page {
   position: relative;
