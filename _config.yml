@@ -28,6 +28,8 @@ menu:
     url:               /
   - title:             Projects
     url:               /projects/
+  - title:             Art
+    url:               /art/
   - title:             About Me
     url:               /about/
   - title:             Resume

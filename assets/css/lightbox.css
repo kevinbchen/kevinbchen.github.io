@@ -26,8 +26,8 @@
 }
 
 #lightbox_img img {
-  max-width: 75vw;
-  max-height: 80vh;
+  max-width: calc(100vw - 150px);
+  max-height: calc(100vh - 150px);
   margin: 0;
 }
 
@@ -44,15 +44,15 @@
 }
 
 #lightbox_prev {
-  position: absolute;
-  left: -50px;
+  position: fixed;
+  left: 10px;
   top: 50%;
   margin-top: -25px;
 }
 
 #lightbox_next {
-  position: absolute;
-  right: -50px;
+  position: fixed;
+  right: 10px;
   top: 50%;
   margin-top: -25px;
 }

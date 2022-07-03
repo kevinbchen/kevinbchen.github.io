@@ -2,6 +2,10 @@
 layout: default
 ---
 
+{% if page.cover_image %}
+  <div class="cover" style="background-image: url('{{ site.files_domain }}{{ page.cover_image }}');{{ page.cover_css }}"></div>
+{% endif %}
+
 <div class="page">
   <h1 class="page-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.year }}</span>

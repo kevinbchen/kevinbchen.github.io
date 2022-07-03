@@ -195,8 +195,9 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  padding-top:    1rem;
-  padding-bottom: 1rem;
+}
+.page {
+  padding: 1rem;
   overflow: hidden;
 }
 .cover {
@@ -207,28 +208,24 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
   .content {
-    max-width: 38rem;
-    margin-left: 20rem;
-    margin-right: 2rem;
-    margin-top: 2rem;
+    margin-left: 18rem;
+  }
+  .page {
+    max-width: 42rem;
+    padding: 3rem;
   }
   .cover {
     max-width: 42rem;
-    margin-left: 18rem;
-    margin-right: 0rem;
   }
 }
 
 @media (min-width: 64em) {
-  .content {
-    margin-left: 21rem;
-    margin-right: 3rem;
-    margin-top: 3rem;
+  .page {
+    max-width: 44rem;
+    padding: 4rem;
   }
   .cover {
     max-width: 44rem;
-    margin-left: 18rem;
-    margin-right: 0rem;
   }
 }
 
