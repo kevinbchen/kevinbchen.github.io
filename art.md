@@ -4,6 +4,7 @@ title: Art
 
 base_url: /art/
 images:
+  - margit.jpg
   - darksouls.jpg
   - irithyll_final.jpg
   - sekiro.jpg
