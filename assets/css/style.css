@@ -1,4 +1,5 @@
 ---
+bg_image: art/IMG_0218.jpg
 ---
 
 /* General / misc */
@@ -28,9 +29,21 @@ table em {
 }
 
 /* Index */
+.content-bg {
+  background: url('{{ site.files_domain }}/{{ page.bg_image }}') no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
+  will-change: transform;
+}
 .index-image {
-  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255,255,255,0.05), rgba(0,0,0,0.05), rgba(0,0,0,0.4)), 
-    url('{{ site.files_domain }}/art/sekiro.jpg') no-repeat fixed;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255,255,255,0.05), rgba(0,0,0,0.05), rgba(0,0,0,0.2)), 
+    url('{{ site.files_domain }}/{{ page.bg_image }}') no-repeat fixed;
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -66,6 +79,18 @@ table em {
   text-decoration: none;
 }
 .index-header a:hover {
+}
+.index-arrow {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin: auto;
+  transition: border 0.25s;
+}
+.index-header a:hover .index-arrow {
+  border-color: rgba(255, 255, 255, 1.0);
 }
 
 /* Projects list */
