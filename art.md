@@ -4,6 +4,10 @@ title: Art
 
 base_url: /art/
 images:
+  - IMG_0235.jpg
+  - IMG_0228.jpg
+  - IMG_0218.jpg
+  - IMG_0209.jpg
   - margit.jpg
   - darksouls.jpg
   - irithyll_final.jpg

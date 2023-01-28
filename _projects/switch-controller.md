@@ -48,7 +48,7 @@ There are 2 main parts:
 
 {% include image_flexgrid.html images=page.images1 %}
 
-There are commercial 3rd-party controllers and wireless adapters that achieve the same thing much more cleaning and conveniently; this was mainly a fun side project to get back into electronics and 3d-printing. Of course, having control over the software does enable things like a turbo mode for specific buttons (to hit rocks and chop trees more easily in Animal Crossing!).
+There are commercial 3rd-party controllers and wireless adapters that achieve the same thing much more cleanly and conveniently; this was mainly a fun side project to get back into electronics and 3d-printing. Of course, having control over the software does enable things like a turbo mode for specific buttons (to hit rocks and chop trees more easily in Animal Crossing!).
 
 Although the software is currently written for an Xbox One Controller, other usb controllers should also work, assuming the usb host shield library support them. In addition, the transmitter can also be replaced by a PC, opening up potential for some basic automation.
 
