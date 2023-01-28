@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Grizzly Tank (Red Alert 2)
+title: Grizzly Battle Tank
 year: 2010
 category: models
 

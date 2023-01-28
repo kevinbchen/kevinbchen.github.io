@@ -8,6 +8,13 @@
 img {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+.preview.box-shadow:hover {
+  box-shadow: rgba(50, 50, 93, 0.7) 0px 2px 5px -1px, rgba(0, 0, 0, 0.7) 0px 1px 3px -1px;
+}
+.lightbox-image img:hover {
+  box-shadow: rgba(50, 50, 93, 0.7) 0px 2px 5px -1px, rgba(0, 0, 0, 0.7) 0px 1px 3px -1px;
+}
+
 table img {
   margin: auto;
 }
@@ -63,30 +70,26 @@ table em {
 
 /* Projects list */
 .preview {
-  background: #0a81d1;
   position: relative;
-
-  height: 180px;
-  margin: 0 1% 1% 0;
+  height: 220px;
+  margin: 0 2% 2% 0;
   float: left;
-
+  display: flex;
+  flex-flow: column;
   overflow: hidden;
+  transition: box-shadow 0.25s;
 }
 .preview {
-  width: 49.5%;
+  width: 48%;
 }
 .preview:nth-child(2n) { margin-right: 0; }
 
 .preview .bg {
-  position: absolute;
-  left: 0;
-  top: 0;
   width: 100%;
-  height: 100%;
+  flex: 1 1 auto;
   background-size: cover;
   background-position: center center;
-  opacity: 0.95;
-  transition: opacity 0.25s, transform 0.25s;
+  opacity: 1.0;
 }
 
 .preview .gradient {
@@ -102,16 +105,12 @@ table em {
 }
 
 .preview .text {
-  position: absolute;
-  left: 0.5rem;
-  bottom: 0.25rem;
-  color: #fff;
-  vertical-align: bottom;
+  color: #000;
+  flex: 0 1 auto;
+  padding: 0.25rem 0.5rem;
 }
-.preview .text .title { color: #fff; font-size: 1rem; font-weight: bold; }
-.preview .text .subtitle { color: #fff; font-size: 0.75rem; }
-
-.preview:hover .bg { opacity: 0.25; transform: scale(1.2); }
+.preview .text .title { font-size: 1rem; font-weight: bold; }
+.preview .text .subtitle { font-size: 0.75rem; }
 
 
 /* Image grid */

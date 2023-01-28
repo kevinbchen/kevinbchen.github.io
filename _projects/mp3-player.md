@@ -1,6 +1,6 @@
 ---
 layout: project
-title: MP3 Player
+title: 80188 MP3 Player
 year: 2013
 category: electronics
 
