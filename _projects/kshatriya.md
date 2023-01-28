@@ -118,6 +118,9 @@ controller_images:
     - images:
         - file: 20160215_190200.jpg
         - file: 20160215_190321.jpg
+    - images:
+        - file: 20160215_203428.mp4
+          video: true
 
 beamsaber_images:
   base_url: /projects/kshatriya/
@@ -228,10 +231,6 @@ I experimented with both blue and white LEDs for the wing thrusters, but went wi
 To programmatically control the brightness of the LEDS, I made a small controller with an ATtiny and a button. Currently it just does a simple "power-on" pulse effect.
 
 {% include image_flexgrid.html images=page.controller_images %}
-<video controls style="width: 100%; height: auto">
-  <source src="{{ site.files_domain }}/projects/kshatriya/20160215_203428.mp4" type="video/mp4">
-</video>
-<br />
 
 #### Beam saber
 I also made a light up beam saber using a small 3V battery. Unfortunately, it's just slightly to big for Kshatriya's hands, but it'd be perfect for a Master grade.

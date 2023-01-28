@@ -22,9 +22,17 @@
       {%- if i0 == 0 -%}
         <div class="image-flexgrid-row">
       {%- endif -%}
-        <a href="{{ site.files_domain }}{{ images.base_url }}{{ image.file }}" class="image-item lightbox-image" style="--ratio: {{ ratio }};">
-          <img src="{{ site.files_domain }}{{ images.base_url }}{{ thumbnail }}" alt="{{ image.file }}" />
-        </a>
+        {%- if image.video -%}
+          <div class="image-item" style="display: inline-block; --ratio: {{ ratio }};">
+            <video controls>
+              <source src="{{ site.files_domain }}{{ images.base_url }}{{ image.file }}" type="video/mp4">
+            </video>
+          </div>
+        {%- else -%}        
+          <a href="{{ site.files_domain }}{{ images.base_url }}{{ image.file }}" class="image-item lightbox-image" style="--ratio: {{ ratio }};">
+            <img src="{{ site.files_domain }}{{ images.base_url }}{{ thumbnail }}" alt="{{ image.file }}" />
+          </a>
+        {%- endif -%}        
       {%- if i1 == 0 or forloop.last -%}
         </div>
       {%- endif -%}
