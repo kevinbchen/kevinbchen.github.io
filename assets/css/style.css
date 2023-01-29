@@ -9,6 +9,9 @@ bg_image: art/IMG_0218.jpg
 img {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+video {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
 .preview.box-shadow:hover {
   box-shadow: rgba(50, 50, 93, 0.7) 0px 2px 5px -1px, rgba(0, 0, 0, 0.7) 0px 1px 3px -1px;
 }
@@ -166,7 +169,7 @@ table em {
   aspect-ratio: var(--ratio);
   flex-grow: calc(var(--ratio));
 }
-.image-flexgrid-row img, .image-flexgrid-row video { width: 100%; margin: 0; }
+.image-flexgrid-row img, .image-flexgrid-row video { display: block; width: 100%; margin: 0; }
 
 
 /* Art page */

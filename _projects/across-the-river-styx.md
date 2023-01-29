@@ -15,11 +15,13 @@ images:
   use_thumbnails: false
   sections:
     - images:
-        - file: styx3.png    
+        - file: styx3.png
     - images:
         - file: styx1.png
         - file: styx5.png
-
+    - images:
+        - file: styx.mp4
+          video: true
 ---
 
 **Itch.io**: <https://kevinbchen.itch.io/across-the-river-styx>

@@ -23,7 +23,7 @@
         <div class="image-flexgrid-row">
       {%- endif -%}
         {%- if image.video -%}
-          <div class="image-item" style="display: inline-block; --ratio: {{ ratio }};">
+          <div class="image-item" style="--ratio: {{ ratio }};">
             <video controls>
               <source src="{{ site.files_domain }}{{ images.base_url }}{{ image.file }}" type="video/mp4">
             </video>

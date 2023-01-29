@@ -18,6 +18,9 @@ images:
         - file: rhythmloops_title.png
     - images:        
         - file: rhythmloops.png
+    - images:        
+        - file: rhythmloops.mp4
+          video: true
 ---
 
 **Itch.io**: <https://kevinbchen.itch.io/rhythm-loops>
