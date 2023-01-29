@@ -12,8 +12,15 @@ img {
 video {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
+
+.preview.box-shadow {
+  transition: box-shadow 0.25s;
+}
 .preview.box-shadow:hover {
   box-shadow: rgba(50, 50, 93, 0.7) 0px 2px 5px -1px, rgba(0, 0, 0, 0.7) 0px 1px 3px -1px;
+}
+.lightbox-image img {
+  transition: box-shadow 0.25s;
 }
 .lightbox-image img:hover {
   box-shadow: rgba(50, 50, 93, 0.7) 0px 2px 5px -1px, rgba(0, 0, 0, 0.7) 0px 1px 3px -1px;
@@ -105,7 +112,6 @@ table em {
   display: flex;
   flex-flow: column;
   overflow: hidden;
-  transition: box-shadow 0.25s;
 }
 .preview {
   width: 48%;
